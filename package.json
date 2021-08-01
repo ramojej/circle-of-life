@@ -1,9 +1,9 @@
 {
   "name": "gatsby-wp-dilate-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and WordPress",
+  "description": "A website made with Gatsby for CircleOfLive Veterinary Clinic",
   "version": "0.1.0",
-  "author": "Jejomar Dorongon <jejomar@dilate.com.au>",
+  "author": "Jejomar Dorongon <devjejo@gmail.com>",
   "dependencies": {
     "autoprefixer": "^10.3.1",
     "gatsby": "^3.10.2",
