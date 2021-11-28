@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 import Layout from "../components/layout"
 
 const Home = ({ data: { wpPage } }) => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title={wpPage.seo.title}
         description={wpPage.seo.metaDesc}
         image={
