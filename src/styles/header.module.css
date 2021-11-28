@@ -1,5 +1,5 @@
 .header {
-  @apply bg-black top-0 xl:absolute xl:w-full z-30;
+  @apply top-0 xl:absolute xl:w-full z-30;
 }
 
 .header__flex-wrapper {
@@ -11,7 +11,31 @@
 }
 
 .menu-btn {
-  @apply focus:outline-none focus:ring-2 focus:ring-primary xl:hidden;
+  @apply focus:outline-none xl:hidden flex flex-col items-end z-50 relative;
+}
+
+.menu-btn span {
+  @apply bg-primary rounded block transition-all;
+  width: 25px;
+  height: 3px;
+}
+
+.menu-btn span:last-child {
+  width: 21px;
+  margin-top: 3px;
+}
+
+.menu-cross.menu-btn span:first-child {
+  transform: rotate(45deg) translateX(calc(22%));
+}
+
+.menu-cross.menu-btn span:last-child {
+  transform: rotate(140deg) translateX(calc(-14%));
+  width: 25px;
+}
+
+.menu-cross.menu-btn span {
+  @apply bg-white;
 }
 
 .main-menu {
@@ -23,7 +47,7 @@
 }
 
 .main-menu li a {
-  @apply text-white;
+  @apply text-grey font-medium text-md;
 }
 
 .main-menu-item {
@@ -47,7 +71,7 @@ svg.menu-arrow-down {
 }
 
 .mobile-menu-container {
-  @apply h-full top-0 fixed bg-white z-40 w-full xl:hidden transform p-4 transition overflow-scroll;
+  @apply h-full top-0 fixed bg-primary z-40 w-full xl:hidden transform p-4 transition overflow-scroll;
 }
 
 .mobile-menu-active {
@@ -64,4 +88,8 @@ svg.menu-arrow-down {
 
 .mobile-menu-ul {
   @apply ml-8 relative z-10 mt-16 w-44;
+}
+
+.mobile-menu-ul li a {
+  @apply text-white text-md-lh;
 }

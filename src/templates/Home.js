@@ -15,7 +15,7 @@ const Home = ({ data: { wpPage } }) => {
             : null
         }
       />
-      <div>Test Home</div>
+      <div style={{ fontFamily: "Nexa Bold" }}>Test Home</div>
     </Layout>
   )
 }

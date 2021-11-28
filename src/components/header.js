@@ -1,7 +1,6 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
 import React, { useContext } from "react"
-import Logo from "../assets/logo.svg"
-import Burger from "../assets/burger.svg"
+import { StaticImage } from "gatsby-plugin-image"
 import Menu from "./Menu/Menu"
 import { SiteContext } from "../context/SiteContext"
 import MobileMenu from "./Menu/MobileMenu"
@@ -10,10 +9,11 @@ import {
   header__flexWrapper,
   header__logo,
   menuBtn,
+  menuCross,
 } from "../styles/header.module.css"
 
 const Header = () => {
-  const { toggleMenu } = useContext(SiteContext)
+  const { toggleMenu, isMenuOpen } = useContext(SiteContext)
 
   const { wpMenu } = useStaticQuery(graphql`
     {
@@ -39,16 +39,17 @@ const Header = () => {
     <header className={header}>
       <div className="container-lg">
         <div className={header__flexWrapper}>
-          <Link to="/" className="" aria-label="Dilate Logo">
-            <Logo className={header__logo} />
+          <Link to="/" className={header__logo} aria-label="CLVC Logo">
+            <StaticImage src="../assets/header-logo.png" alt="CLVC Logo" />
           </Link>
           <div>
             <button
               onClick={toggleMenu}
-              aria-label="Open Mobile Menu"
-              className={menuBtn}
+              aria-label="Toggle Mobile Menu"
+              className={`${menuBtn} ${isMenuOpen ? menuCross : ""}`}
             >
-              <Burger className="fill-current text-white" />
+              <span></span>
+              <span></span>
             </button>
             {wpMenu ? (
               <Menu menu={wpMenu} />

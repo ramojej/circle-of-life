@@ -9,20 +9,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#B2D234",
+        primary: "#0E4D80",
+        grey: "#071623",
       },
       ringColor: {
-        primary: "#B2D234",
+        primary: "#0E4D80",
       },
       fontFamily: {
-        pop: ["Poppins"],
+        nexa: ["Nexa Bold"],
         quest: ["Questrial"],
       },
       fontSize: {
         xs: "14px",
         sm: "16px",
         md: "18px",
-        "md-lh": ["18px", "36px"],
+        "md-lh": ["18px", "28px"],
         lg: ["20px", "30px"],
       },
       letterSpacing: {

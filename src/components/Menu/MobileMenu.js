@@ -2,11 +2,9 @@ import React, { useContext, useState } from "react"
 import PropTypes from "prop-types"
 import { flatListToHierarchical } from "../../utils/flatListToHierarchical"
 import { SiteContext } from "../../context/SiteContext"
-import Close from "../../assets/close.svg"
 import MobileMenuLi from "./MobileMenuLi"
 import {
   mobileMenuContainer,
-  closeBtnContainer,
   mobileMenuUl,
   mobileMenuActive,
   mobileMenuInactive,
@@ -29,11 +27,11 @@ const MobileMenu = ({ menu }) => {
         isMenuOpen ? mobileMenuActive : mobileMenuInactive
       }`}
     >
-      <div className={closeBtnContainer}>
+      {/* <div className={closeBtnContainer}>
         <button onClick={toggleMenu} aria-label="Close">
           <Close />
         </button>
-      </div>
+      </div> */}
       <ul className={mobileMenuUl}>
         {menuItems.map(menuItem => {
           return (

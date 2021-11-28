@@ -8,9 +8,9 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Dilate Gatsby-WordPress Starter`,
-    description: `A theme starter for Dilate powered by WordPress and GatsbyJS`,
-    author: `Dilate Digital - Jejomar Dorongon`,
+    title: `CircleOfLive Veterinary Clinic`,
+    description: `A theme starter for CircleOfLive Veterinary Clinic powered by WordPress and GatsbyJS`,
+    author: `CLVC - Jejomar Dorongon`,
     image: "/dilate-digital-agency-perth.jpeg",
     siteUrl: `https://google.com/`,
   },
@@ -64,5 +64,32 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      /* Include plugin */
+      resolve: "gatsby-omni-font-loader",
+
+      /* Plugin options */
+      options: {
+        /* Font loading mode */
+        mode: "async",
+
+        /* Enable font loading listener to handle FOUT */
+        enableListener: true,
+
+        /* Preconnect URL-s. This example is for Google Fonts */
+        preconnect: ["https://fonts.gstatic.com"],
+
+        /* Web fonts. File link should point to font CSS file. */
+        web: [
+          {
+            /* Exact name of the font as defied in @font-face CSS rule */
+            name: "Montserrat",
+            /* URL to the font CSS file with @font-face definition */
+            file:
+              "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600",
+          },
+        ],
+      },
+    },
   ],
 }
