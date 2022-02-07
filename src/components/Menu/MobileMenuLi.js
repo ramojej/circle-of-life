@@ -20,10 +20,7 @@ const MobileMenuLi = props => {
   }
 
   return (
-    <li
-      key={props.menuItem.key}
-      className="items-center relative menu-item mb-30px"
-    >
+    <li key={props.menuItem.key} className="relative mb-5">
       <div className="flex justify-between">
         <UniversalLink
           className="text-lg"

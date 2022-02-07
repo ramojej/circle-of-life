@@ -40,7 +40,7 @@ const Header = () => {
       <div className="container-lg">
         <div className={header__flexWrapper}>
           <Link to="/" className={header__logo} aria-label="CLVC Logo">
-            <StaticImage src="../assets/header-logo.png" alt="CLVC Logo" />
+            <StaticImage src="../assets/primary-logo.png" alt="CLVC Logo" />
           </Link>
           <div>
             <button

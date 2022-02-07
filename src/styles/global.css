@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./typography.css";
 
 @layer base {
   * {
@@ -9,7 +8,7 @@
   }
   body {
     scroll-behavior: smooth;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Outfit", sans-serif;
   }
 }
 

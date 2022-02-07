@@ -83,10 +83,10 @@ module.exports = {
         web: [
           {
             /* Exact name of the font as defied in @font-face CSS rule */
-            name: "Montserrat",
+            name: "Outfit",
             /* URL to the font CSS file with @font-face definition */
             file:
-              "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600",
+              "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap",
           },
         ],
       },

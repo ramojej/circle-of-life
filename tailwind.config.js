@@ -1,11 +1,5 @@
 module.exports = {
-  purge: {
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
-    options: {
-      safelist: ["animate-spin"],
-    },
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -16,8 +10,7 @@ module.exports = {
         primary: "#0E4D80",
       },
       fontFamily: {
-        nexa: ["Nexa Bold"],
-        quest: ["Questrial"],
+        outfit: ["Outfit"],
       },
       fontSize: {
         xs: "14px",
