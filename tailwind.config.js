@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         primary: "#0E4D80",
         grey: "#071623",
+        lightBlue: "#7DAACE",
       },
       ringColor: {
         primary: "#0E4D80",
@@ -34,6 +35,8 @@ module.exports = {
       width: {
         "200px": "200px",
         "slider-img-default-sm": "320px",
+        "logo-m": "198px",
+        "logo-d": "242px",
       },
       height: {
         hero: "calc(100vh + 100px)",

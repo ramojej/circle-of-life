@@ -7,7 +7,11 @@
 }
 
 .header__logo {
-  @apply w-32 md:w-52;
+  @apply w-logo-m lg:w-logo-d;
+}
+
+.header__logo svg {
+  @apply fill-white;
 }
 
 .menu-btn {
@@ -15,13 +19,12 @@
 }
 
 .menu-btn span {
-  @apply bg-primary rounded block transition-all;
-  width: 25px;
+  @apply bg-white rounded block transition-all mr-2;
+  width: 20px;
   height: 3px;
 }
 
-.menu-btn span:last-child {
-  width: 21px;
+.menu-btn span:not(:first-child) {
   margin-top: 3px;
 }
 
@@ -30,8 +33,12 @@
 }
 
 .menu-cross.menu-btn span:last-child {
-  transform: rotate(140deg) translateX(calc(-14%));
-  width: 25px;
+  transform: rotate(137deg) translateX(calc(-21%));
+  width: 20px;
+}
+
+.menu-cross.menu-btn span:nth-child(2) {
+  @apply hidden;
 }
 
 .menu-cross.menu-btn span {
@@ -47,7 +54,11 @@
 }
 
 .main-menu li a {
-  @apply text-grey font-medium text-md;
+  @apply text-white font-normal text-md;
+}
+
+.main-menu li a.active {
+  @apply text-lightBlue;
 }
 
 .main-menu-item {

@@ -8,6 +8,7 @@ import {
   mainMenuItem,
   submenu,
   menuArrowDown,
+  active,
 } from "../../styles/header.module.css"
 
 const Menu = ({ menu }) => {
@@ -26,6 +27,7 @@ const Menu = ({ menu }) => {
                   ? menuItem.connectedNode.node.uri
                   : menuItem.url
               }
+              activeClassName={active}
             >
               {menuItem.title}
             </UniversalLink>
@@ -44,6 +46,7 @@ const Menu = ({ menu }) => {
                       <UniversalLink
                         to={subItem.url}
                         className="font-pop text-ct-black"
+                        activeClassName={active}
                       >
                         {subItem.title}
                       </UniversalLink>
