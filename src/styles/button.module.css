@@ -1,0 +1,17 @@
+.btn {
+  @apply flex items-center justify-center font-semibold border border-white rounded-full text-primary;
+  width: 338px;
+  height: 54px;
+}
+
+.btn-white {
+  @apply border-none bg-white text-primary;
+}
+
+.btn-blue {
+  @apply bg-primary text-white;
+}
+
+.btn.btn-text-white {
+  @apply text-white;
+}

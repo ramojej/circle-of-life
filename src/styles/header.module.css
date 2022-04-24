@@ -1,5 +1,5 @@
 .header {
-  @apply top-0 xl:absolute xl:w-full z-30 bg-primary;
+  @apply bg-primary;
 }
 
 .header__flex-wrapper {

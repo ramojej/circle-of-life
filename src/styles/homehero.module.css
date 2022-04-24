@@ -1,0 +1,57 @@
+.home-hero {
+  @apply bg-primary relative min-h-screen lg:flex;
+}
+
+.logos-container {
+  @apply overflow-hidden absolute bg-transparent w-full z-10;
+  height: calc(100vh - 97px);
+}
+
+.hero-logo {
+  @apply w-full absolute;
+}
+.hero-logo svg {
+  @apply fill-white;
+  opacity: 3%;
+}
+
+.logo-only-left {
+  max-width: 345px;
+  bottom: 37px;
+  left: -90px;
+}
+
+.logo-only-right {
+  max-width: 288px;
+  right: -120px;
+}
+
+.hero-content {
+  @apply text-center relative z-20 pt-50 lg:text-left lg:max-w-md;
+}
+
+.hero-content span {
+  @apply text-lightBlue block mx-auto;
+  max-width: 218px;
+}
+
+.hero-content h1 {
+  @apply text-white font-semibold leading-none mb-5 mt-30px md:max-w-sm md:mx-auto;
+  font-size: 40px;
+}
+
+.hero-content p {
+  @apply text-white leading-snug mx-auto mb-35px;
+  max-width: 338px;
+}
+
+.hero-image-container {
+  @apply mx-auto relative z-20 -bottom-11;
+  max-width: 338px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-image-container {
+    max-width: 823px;
+  }
+}

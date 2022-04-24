@@ -1,0 +1,7 @@
+.btn-container {
+  @apply flex flex-col items-center;
+}
+
+.btn-container a:first-child {
+  @apply mb-10px;
+}

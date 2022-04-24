@@ -24,10 +24,12 @@ module.exports = {
         two: "2px",
       },
       spacing: {
-        30: "7.5rem",
-        45: "11.5rem",
+        "10px": "10px",
         "15px": "15px",
         "20px": "20px",
+        "30px": "30px",
+        "35px": "35px",
+        50: "50px",
       },
       maxWidth: {
         btn: "215px",

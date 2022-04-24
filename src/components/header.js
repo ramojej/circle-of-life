@@ -44,8 +44,11 @@ const Header = () => {
           </Link>
           <div
             onClick={toggleMenu}
+            onKeyDown={toggleMenu}
             aria-label="Toggle Mobile Menu"
             className="flex items-center"
+            role="button"
+            tabIndex={0}
           >
             <button
               aria-label="Toggle Mobile Menu"
@@ -55,7 +58,7 @@ const Header = () => {
               <span></span>
               <span></span>
             </button>
-            <div className="lg:hidden text-white font-medium text-xs">MENU</div>
+            <div className="xl:hidden text-white font-medium text-xs">MENU</div>
             {wpMenu ? (
               <Menu menu={wpMenu} />
             ) : (

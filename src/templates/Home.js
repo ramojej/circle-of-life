@@ -2,8 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Seo from "../components/SEO"
 import Layout from "../components/layout"
+import HomeHero from "../components/Home/HomeHero"
 
 const Home = ({ data: { wpPage } }) => {
+  // console.log(wpPage)
   return (
     <Layout>
       <Seo
@@ -15,7 +17,7 @@ const Home = ({ data: { wpPage } }) => {
             : null
         }
       />
-      <div>Test Home</div>
+      <HomeHero homeHeroFields={wpPage.homeHeroFields} />
     </Layout>
   )
 }
@@ -32,6 +34,36 @@ export const query = graphql`
         opengraphImage {
           localFile {
             publicURL
+          }
+        }
+      }
+      homeHeroFields {
+        heroText
+        heroTitle
+        slogan
+        heroButtons {
+          firstButtonLink {
+            ... on WpPage {
+              uri
+            }
+          }
+          firstButtonName
+          secondButtonLink {
+            ... on WpPage {
+              uri
+            }
+          }
+          secondButtonName
+        }
+        heroImage {
+          localFile {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FULL_WIDTH
+                placeholder: BLURRED
+                quality: 100
+              )
+            }
           }
         }
       }

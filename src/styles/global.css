@@ -12,6 +12,10 @@
   }
 }
 
+body.menu-open {
+  @apply overflow-hidden;
+}
+
 .container-lg {
   max-width: 1675px;
 }
