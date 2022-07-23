@@ -16,6 +16,10 @@ body.menu-open {
   @apply overflow-hidden;
 }
 
+.container {
+  max-width: 1380px;
+}
+
 .container-lg {
   max-width: 1675px;
 }
@@ -28,6 +32,7 @@ body.menu-open {
 
 .container-md,
 .container-lg,
-.container-sm {
+.container-sm,
+.container {
   @apply mx-auto w-full;
 }

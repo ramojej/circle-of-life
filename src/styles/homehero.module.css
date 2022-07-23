@@ -1,5 +1,5 @@
 .home-hero {
-  @apply bg-primary relative min-h-screen lg:flex;
+  @apply relative lg:min-h-screen lg:flex 2xl:min-h-[calc(100vh_-_140px)];
 }
 
 .logos-container {
@@ -27,31 +27,36 @@
 }
 
 .hero-content {
-  @apply text-center relative z-20 pt-50 lg:text-left lg:max-w-md;
+  @apply text-center relative z-20 px-4 pt-50 lg:text-left lg:max-w-[647px] 2xl:px-0 2xl:pt-[72px];
 }
 
 .hero-content span {
-  @apply text-lightBlue block mx-auto;
+  @apply text-lightBlue block mx-auto lg:mx-0;
   max-width: 218px;
 }
 
 .hero-content h1 {
-  @apply text-white font-semibold leading-none mb-5 mt-30px md:max-w-sm md:mx-auto;
-  font-size: 40px;
+  @apply text-white font-semibold leading-none text-[40px] mb-5 mt-30px md:max-w-sm md:mx-auto lg:max-w-[647px] lg:text-[65px] lg:tracking-[-1px];
 }
 
 .hero-content p {
-  @apply text-white leading-snug mx-auto mb-35px;
-  max-width: 338px;
+  @apply text-white max-w-[338px] leading-snug mx-auto mb-35px lg:mx-0 lg:text-lg lg:max-w-[462px];
 }
 
 .hero-image-container {
-  @apply mx-auto relative z-20 -bottom-11;
+  @apply mx-auto relative z-20 -bottom-11 lg:w-[700px] 2xl:w-[823px] 2xl:absolute 2xl:right-50;
   max-width: 338px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-image-container {
     max-width: 823px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-content span {
+    max-width: 460px;
+    @apply text-lg;
   }
 }

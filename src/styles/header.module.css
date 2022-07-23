@@ -3,7 +3,7 @@
 }
 
 .header__flex-wrapper {
-  @apply flex p-4 items-center justify-between;
+  @apply flex p-4 items-center justify-between 2xl:p-0 2xl:py-[30px];
 }
 
 .header__logo {

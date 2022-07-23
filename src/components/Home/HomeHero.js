@@ -17,7 +17,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 const HomeHero = ({ homeHeroFields }) => {
   const heroImage = getImage(homeHeroFields.heroImage.localFile)
   return (
-    <>
+    <div className="bg-primary">
       <div className={logosContainer}>
         <div className={`${logoOnlyRight} ${heroLogo}`}>
           <LogoOnly />
@@ -26,7 +26,7 @@ const HomeHero = ({ homeHeroFields }) => {
           <LogoOnly />
         </div>
       </div>
-      <div className={homeHero}>
+      <div className={`${homeHero} container`}>
         <div className={heroContent}>
           <span>{homeHeroFields.slogan}</span>
           <h1>{homeHeroFields.heroTitle}</h1>
@@ -53,7 +53,7 @@ const HomeHero = ({ homeHeroFields }) => {
           <GatsbyImage image={heroImage} alt="Three dogs and cat" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

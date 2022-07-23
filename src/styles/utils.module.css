@@ -1,7 +1,18 @@
 .btn-container {
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center lg:flex-row;
 }
 
 .btn-container a:first-child {
-  @apply mb-10px;
+  @apply mb-10px lg:mb-0;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-container a:first-child {
+    width: 267px;
+    @apply mr-5;
+  }
+
+  .btn-container a:last-child {
+    width: 193px;
+  }
 }

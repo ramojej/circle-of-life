@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <header className={header}>
-      <div className="container-lg">
+      <div className="container">
         <div className={header__flexWrapper}>
           <Link to="/" className={header__logo} aria-label="CLVC Logo">
             <Logo />

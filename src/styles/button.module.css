@@ -15,3 +15,9 @@
 .btn.btn-text-white {
   @apply text-white;
 }
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    height: 67px;
+  }
+}

@@ -6,7 +6,6 @@ import {
   btnWhite,
   btnBlue,
   btnTextWhite,
-  btnTransparent,
 } from "../styles/button.module.css"
 
 const Button = ({ color, height, width, text, link, textColor }) => {
@@ -15,9 +14,6 @@ const Button = ({ color, height, width, text, link, textColor }) => {
   switch (color) {
     case "white":
       btnColor = btnWhite
-      break
-    case "transparent":
-      btnColor = btnTransparent
       break
     default:
       btnColor = btnBlue
