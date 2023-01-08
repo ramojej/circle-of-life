@@ -60,7 +60,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-preact`,
+    //`gatsby-plugin-preact`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
@@ -85,8 +85,7 @@ module.exports = {
             /* Exact name of the font as defied in @font-face CSS rule */
             name: "Outfit",
             /* URL to the font CSS file with @font-face definition */
-            file:
-              "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap",
+            file: "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap",
           },
         ],
       },
