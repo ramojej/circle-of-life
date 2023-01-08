@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Seo from "../components/SEO"
+import Seo from "../components/seo"
 import Layout from "../components/layout"
 import HomeHero from "../components/Home/HomeHero"
 
@@ -23,7 +23,7 @@ const Home = ({ data: { wpPage } }) => {
 }
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     wpPage(id: { eq: $id }) {
       id
       uri
